@@ -20,7 +20,7 @@ it runs on port 8080 & makes use of MongoDB Atlas (Cloud Hosting) to store the d
 ***********************
 
 React folder consist of the frontend configuration with a DockerFile and it can be executed by running the below command
-Its available on port 8081 (mentioned in the .env folder)
+Its available on port 8081 (mentioned in the react/.env folder)
 
 # npm start
 
@@ -40,6 +40,6 @@ need to run init-letsencrypt.sh first followed by docker-compose command to brin
 
 After cloning the repo run 
 
-#npm install 
+# npm install 
 
 inside react and node folder to download the dependencies required
