@@ -5,16 +5,9 @@ module.exports = mongoose => {
       Username: String,
       FullName: String,
 	  Birthdate: Date,
-	  Email: {
-        type:String, 
-        required: true,
-        index: {
-            unique: true, 
-        },
-        match:/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
-    },
+	  Email: String,
       Password: String,
-      profileImage: String,
+      profileImage: String
     
       // expire_at: {type: Date, default: Date.now, expires: dbConfig.time} // to Delete data after certain time
     },
